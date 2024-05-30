@@ -1,53 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <style>
-    /* Add your CSS styles here */
-  </style>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Portfolio</title>
+   <style>
+       * {
+           box-sizing: border-box;
+           margin: 0;
+           padding: 0;
+       }
+
+       body {
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           line-height: 1.6;
+           color: #333;
+       }
+
+       header {
+           background-color: #333;
+           color: #fff;
+           padding: 1rem;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       }
+
+       nav a {
+           color: #fff;
+           text-decoration: none;
+           margin-left: 1rem;
+       }
+
+       main {
+           max-width: 800px;
+           margin: 2rem auto;
+           padding: 0 1rem;
+       }
+
+       section {
+           margin-bottom: 2rem;
+       }
+
+       iframe {
+           width: 100%;
+           height: 500px;
+           border: none;
+       }
+
+       footer {
+           background-color: #333;
+           color: #fff;
+           text-align: center;
+           padding: 1rem;
+       }
+   </style>
 </head>
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <!-- Add your navigation links here -->
-    </nav>
-  </header>
+   <header>
+       <h1>My Portfolio</h1>
+       <nav>
+           <a href="#">Home</a>
+           <a href="#">Projects</a>
+           <a href="#">About</a>
+       </nav>
+   </header>
 
-  <main>
-    <section>
-      <h2>Featured eeGame</h2>
-      <div>
-        <!-- Embed your itch.io game preview here -->
-        <iframe src="https://xenovitch.itch.io/false-respite"></iframe>
-      </div>
-    </section>
+   <main>
+       <section>
+           <h2>Featured Game</h2>
+           <div>
+               <iframe src="https://xenovitch.itch.io/false-respite"></iframe>
+           </div>
+       </section>
 
-    <section>
-      <h2>Game Download</h2>
-      <p>Play my game from the following link:</p>
-      <a href="https://xenovitch.itch.io/" target="_blank">Download Game</a>
-    </section>
+       <section>
+           <h2>Game Download</h2>
+           <p>Play my game from the following link:</p>
+           <a href="https://xenovitch.itch.io/" target="_blank">Download Game</a>
+       </section>
 
-    <section>
-      <h2>Other Repositories</h2>
-      <ul>
-        <!-- List your other repositories here -->
-        <li><a href="https://github.com/YOUR_USERNAME/REPO_1" target="_blank">Repository 1</a></li>
-        <li><a href="https://github.com/YOUR_USERNAME/REPO_2" target="_blank">Repository 2</a></li>
-        <!-- Add more repositories as needed -->
-      </ul>
-    </section>
-  </main>
+       <section>
+           <h2>Other Repositories</h2>
+           <ul>
+               <li><a href="https://github.com/YOUR_USERNAME/REPO_1" target="_blank">Repository 1</a></li>
+               <li><a href="https://github.com/YOUR_USERNAME/REPO_2" target="_blank">Repository 2</a></li>
+           </ul>
+       </section>
+   </main>
 
-  <footer>
-    <!-- Add your footer content here -->
-  </footer>
-
-  <script>
-    // Add your JavaScript code here if needed
-  </script>
+   <footer>
+       &copy; 2023 My Portfolio
+   </footer>
 </body>
 </html>
